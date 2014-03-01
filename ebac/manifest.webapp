@@ -1,7 +1,7 @@
 {
     "name": "EBAC App",
     "description": "EBAC Calculator",
-    "launch_path": "/index.html",
+    "launch_path": "/ebac/index.html",
     "icons": {
         "48": "/ebac/style/icons/glass-48.png",
         "60": "/ebac/style/icons/glass-60.png",
