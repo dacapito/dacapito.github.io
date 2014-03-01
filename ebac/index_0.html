@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache"> 
+<head>
+<meta http-equiv="Content-Type" content="application/x-web-app-manifest+json; charset=UTF-8">
+<title> Estimated Blood Alcool Content </title>
+<style type="text/css">
+	.caption {
+		position:absolute; 
+		background-color:#FF9900;
+		height:30px;
+		width:100px;
+		color:white;
+		font-weight:bold;
+		border:2px solid;
+		border-radius:10px;
+		}
+	.outmess {
+		position:absolute; 
+		height:30px;
+		color:white;
+		font-weight:bold;
+		border:2px solid;
+		border-radius:10px;
+		width:250px;
+        left:30px;
+        top:410px;
+		}
+	.button{
+		position:absolute; 
+		background-color:#33FFFF;
+		height:30px; 
+		width:100px;
+		font-weight: bold;
+		border:2px solid;
+		border-radius:10px;
+	}
+	.iobox{
+		position:absolute; 
+		height:25px; 
+		width:100px;
+		background-color:#FF9966;
+		font-weight: bold;
+		text-align: center;
+	}
+	.title{
+		position:absolute; 
+		font-weight: bold;
+		background-color:#0099FF;
+		width:305px;
+		height:445px;
+		left=20px;
+		top=20px;
+		font-size:24pt;
+		font-style:italic;
+	}
+	.dummy{
+		box-shadow: 10px 10px 5px #888888;
+	}
+	.signature{
+		position:absolute;
+		font-size:8pt;
+		font-style:italic;
+		left:230px;
+		top:360px;
+	}
+	.smallbox{
+		position:absolute;
+		width:35px;
+		height:20px;
+		color:white;
+		font-weight:bold;
+	}
+	.wide_out_field{
+	left:30px; top:410px; width:250px;
+	}
+</style>
+<script>
+function ebac() {
+	
+	var x=document.getElementById("ebacform");
+	var wgt=x.elements[0].value;
+	var ld=x.elements[1].value;
+	var rd=x.elements[2].value;
+	var sd=x.elements[3].value;
+	var tm=x.elements[4].value;
+	var gend=x.elements[5].value;
+	// var gend = document.getElementById("gen").value;
+	
+	if (gend=="Gent"){
+		var bw= 0.58;
+		var mr= 0.15;
+	}
+	else{
+		var bw= 0.49;
+		var mr= 0.17;
+	}
+	var vol = 12.5*ld + 15.0*rd + 12.0*sd;
+	var ebac = ( (0.806*vol)/(wgt*bw) ) - (tm*mr);
+    ebac = Math.round(ebac*100)/100;
+	if (ebac<0.0)
+		{
+			ebac=0;
+		}
+	if (ebac<0.5)
+	{
+		answ=answ="<div class='outmess' style='background-color:green;'> EBAC= "+ebac+", U R Clean </div>";
+	}
+	else if(ebac>0.5 && ebac<0.8)
+	{
+		answ="<div class='outmess' style='background-color:orange;'> EBAC= "+ebac+", Driving forbidden </div>";
+	}
+	else if(ebac>0.8 && ebac<1.5)
+	{
+		answ="<div class='outmess' style='background-color:red;'> EBAC= "+ebac+", Criminal offense </div>";
+	}
+	else if(ebac>1.5 && ebac<2.4)
+	{
+	   answ="<div class='outmess' style='background-color:red;'> EBAC= "+ebac+", Health Risk </div>";
+	}
+	else{
+	   answ="<div class='outmess' style='background-color:red;'> EBAC= "+ebac+", High health risk </div>";
+	}
+	 
+	//var answ="<div class='outmess' style='background-color:red;'>"+ebac+" "+vol+" "+ld+" "+rd+" "+sd+" "+wgt+" </div>";
+	document.getElementById("out").innerHTML=(answ);
+}
+</script>
+</head>
+
+<body style="background-color:cyan; text-align:center;">
+
+	<div class="title"> Blood Alcool Content </div> 
+	
+	<form id="ebacform"> 
+		<div class="caption" style="left:40px; top:60px; " > Weight (Kg)</div>
+		<input class="iobox" style=" left:160px; top:60px; " type="float" name="wgt" value=80 >
+		<div class="caption" style="left:40px; top:160px; " > Beer </div>
+		<input class="iobox" style=" left:160px; top:160px; " type="float" name="light" value=0>	
+		<div class="caption" style="left:40px; top:210px; " >  Wine </div>
+		<input class="iobox" style=" left:160px; top:210px; " type="float" name="reg" value=1>
+		<div class="caption" style="left:40px; top:260px; " > Wiskey </div>
+		<input class="iobox" style=" left:160px; top:260px; " type="float" name="super" value=0>
+		<div class="caption" style="left:40px; top:310px; " > Time (hrs) </div>
+		<input class="iobox" style=" left:160px; top:310px; " type="float" name="time" value=1>
+		<div class="caption" style="left:40px; top:110px; " > Gender </div>
+		<select id="gen" class="iobox" style=" left:160px; top:110px;">
+			<option>Gent</option>
+			<option>Lady</option>
+		</select>
+	</form> 
+	<button onclick="ebac()" class="button"  style="left:100px; top:360px;"> Est. BAC </button>
+	<div id="out"> </div>
+	<div class="signature"> DacApp 2013 </div>
+</body>
+</html>
