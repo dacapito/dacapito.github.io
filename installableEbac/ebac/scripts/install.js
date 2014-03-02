@@ -1,6 +1,6 @@
-// var manifest_url = location.href + 'manifest.webapp';
+var manifest_url = location.href + 'manifest.webapp';
 
-var manifest_url = 'https://dacapito.github.io/installableEbac/manifest.webapp';
+// var manifest_url = 'https://dacapito.github.io/installableEbac/manifest.webapp';
 
 function install(ev) {
   ev.preventDefault();
