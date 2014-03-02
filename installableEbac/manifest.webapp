@@ -1,7 +1,7 @@
 {
   "version": "0.1",
-  "name": "Open Web App",
-  "description": "Your new awesome Open Web App",
+  "name": "EBAC",
+  "description": "Estimated blood alcohol content",
   "launch_path": "/installableEbac/index.html",
   "icons": {
     "60": "/installableEbac/icons/glass-60.png",
@@ -14,13 +14,13 @@
   },
   "locales": {
     "es": {
-      "description": "Su nueva aplicación impresionante Open Web",
+      "description": "Estimated blood alcohol content",
       "developer": {
         "url": "http://perso.numericable.fr/francesco.dacapito/"
       }
     },
     "it": {
-      "description": "Il vostro nuovo fantastico Open Web App",
+      "description": "Estimated blood alcohol content",
       "developer": {
         "url": "http://perso.numericable.fr/francesco.dacapito/"
       }
