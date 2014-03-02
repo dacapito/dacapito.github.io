@@ -1,0 +1,85 @@
+/*Default CSS layout for narrow screens*/
+
+
+@media (min-width: 480px) {
+  /*CSS for medium width screens*/
+}
+
+@media (min-width: 800px) {
+  /*CSS for wide screens*/
+}
+
+@media (min-width: 1100px) {
+  /*CSS for really wide screens*/
+}
+
+.caption {
+		position:absolute; 
+		background-color:#FF9900;
+		height:30px;
+		width:100px;
+		color:white;
+		font-weight:bold;
+		border:2px solid;
+		border-radius:10px;
+		}
+.outmess {
+		position:absolute; 
+		height:30px;
+		color:white;
+		font-weight:bold;
+		border:2px solid;
+		border-radius:10px;
+		width:250px;
+        left:30px;
+        top:410px;
+		}
+.button{
+		position:absolute; 
+		background-color:#33FFFF;
+		height:30px; 
+		width:100px;
+		font-weight: bold;
+		border:2px solid;
+		border-radius:10px;
+	}
+.iobox{
+		position:absolute; 
+		height:25px; 
+		width:100px;
+		background-color:#FF9966;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+.title{
+		position:absolute; 
+		font-weight: bold;
+		background-color:#0099FF;
+		width:305px;
+		height:445px;
+		left=20px;
+		top=20px;
+		font-size:24pt;
+		font-style:italic;
+	}
+.dummy{
+		box-shadow: 10px 10px 5px #888888;
+	}
+.signature{
+		position:absolute;
+		font-size:8pt;
+		font-style:italic;
+		left:230px;
+		top:370px;
+	}
+.smallbox{
+		position:absolute;
+		width:35px;
+		height:20px;
+		color:white;
+		font-weight:bold;
+	}
+.wide_out_field{
+	left:30px; top:410px; width:250px;
+	}

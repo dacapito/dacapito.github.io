@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "name": "Open Web App",
+  "description": "Your new awesome Open Web App",
+  "launch_path": "/ebac/index.html",
+  "icons": {
+    "16": "/ebac/app-icons/icon-16.png",
+    "48": "/ebac/app-icons/icon-48.png",
+    "128": "/ebac/app-icons/icon-128.png"
+  },
+  "developer": {
+    "name": "dacApp",
+    "url": "http://perso.numericable.fr/francesco.dacapito/"
+  },
+  "locales": {
+    "es": {
+      "description": "Su nueva aplicación impresionante Open Web",
+      "developer": {
+        "url": "http://perso.numericable.fr/francesco.dacapito/"
+      }
+    },
+    "it": {
+      "description": "Il vostro nuovo fantastico Open Web App",
+      "developer": {
+        "url": "http://perso.numericable.fr/francesco.dacapito/"
+      }
+    }
+  },
+  "default_locale": "en"
+}
