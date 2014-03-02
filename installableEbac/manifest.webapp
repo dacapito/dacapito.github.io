@@ -4,9 +4,9 @@
   "description": "Your new awesome Open Web App",
   "launch_path": "/ebac/index.html",
   "icons": {
-    "16": "/ebac/app-icons/icon-16.png",
-    "48": "/ebac/app-icons/icon-48.png",
-    "128": "/ebac/app-icons/icon-128.png"
+    "16": "/ebac/icons/glass-60.png",
+    "48": "/ebac/icons/glass-48.png",
+    "128": "/ebac/icons/glass-128.png"
   },
   "developer": {
     "name": "dacApp",
