@@ -8,14 +8,12 @@ function install(ev) {
   // install the app
   var installLocFind = navigator.mozApps.install(manifest_url);
   installLocFind.onsuccess = function(data) {
-    // App is installed, do something 
-	alert(manifest_url);
+    // App is installed, do something
   };
   installLocFind.onerror = function() {
     // App wasn't installed, info is in
     // installapp.error.name
     alert(installLocFind.error.name);
-	//alert(manifest_url);
   };
 };
 
