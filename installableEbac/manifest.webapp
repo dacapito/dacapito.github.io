@@ -2,11 +2,11 @@
   "version": "0.1",
   "name": "Open Web App",
   "description": "Your new awesome Open Web App",
-  "launch_path": "/ebac/index.html",
+  "launch_path": "/installableEbac/ebac/index.html",
   "icons": {
-    "16": "/ebac/icons/glass-60.png",
-    "48": "/ebac/icons/glass-48.png",
-    "128": "/ebac/icons/glass-128.png"
+    "16": "/installableEbac/ebac/icons/glass-60.png",
+    "48": "/installableEbac/ebac/icons/glass-48.png",
+    "128": "/installableEbac/ebac/icons/glass-128.png"
   },
   "developer": {
     "name": "dacApp",
