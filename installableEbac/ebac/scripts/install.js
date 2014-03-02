@@ -13,7 +13,7 @@ function install(ev) {
   installLocFind.onerror = function() {
     // App wasn't installed, info is in
     // installapp.error.name
-    alert(installLocFind.error.name);
+    //alert(installLocFind.error.name);
 	alert(manifest_url);
   };
 };
