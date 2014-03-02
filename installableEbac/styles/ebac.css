@@ -44,15 +44,6 @@
 		border-radius:10px;
 	}
 	
-.ins-button{
-		position:absolute; 
-		background-color:#33FFFF;
-		height:30px; 
-		width:100px;
-		font-weight: bold;
-		border:2px solid;
-		border-radius:10px;
-	}
 .iobox{
 		position:absolute; 
 		height:25px; 
