@@ -23,7 +23,7 @@ var installCheck = navigator.mozApps.checkInstalled(manifest_url);
 
 installCheck.onsuccess = function() {
   if(installCheck.result) {
-    button.style.display = "none";
+    ins-button.style.display = "none";
   } else {
     button.addEventListener('click', install, false);
   };
