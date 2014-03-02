@@ -4,7 +4,7 @@
   "description": "Your new awesome Open Web App",
   "launch_path": "/installableEbac/ebac/index.html",
   "icons": {
-    "16": "/installableEbac/ebac/icons/glass-60.png",
+    "16": "/installableEbac/ebac/icons/glass-16.png",
     "48": "/installableEbac/ebac/icons/glass-48.png",
     "128": "/installableEbac/ebac/icons/glass-128.png"
   },
