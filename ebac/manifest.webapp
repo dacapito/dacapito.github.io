@@ -1,11 +1,11 @@
 {
     "name": "EBAC App",
     "description": "EBAC Calculator",
-    "launch_path": "/ebac/index.html",
+    "launch_path": "/index.html",
     "icons": {
-        "48": "/ebac/style/icons/glass-48.png",
-        "60": "/ebac/style/icons/glass-60.png",
-        "128": "/ebac/style/icons/glass-128.png"
+        "48": "/icons/glass-48.png",
+        "60": "/icons/glass-60.png",
+        "128": "/icons/glass-128.png"
     },
     "developer": {
         "name": "DacApp",
