@@ -1,6 +1,6 @@
 {
   "version": "0.1",
-  "name": "EBAC",
+  "name": "OpenMeteoForecast",
   "description": "Weather in Grenoble",
   "launch_path": "/openMeteoForecast/index.html",
   "icons": {
