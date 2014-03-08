@@ -4,7 +4,7 @@
   "description": "Weather in Grenoble",
   "launch_path": "/openMeteoForecast/index.html",
   "icons": {
-    "60": "/openMeteoForecast/icons/rainy_weather_60.png",
+    "62": "/openMeteoForecast/icons/rainy_weather_60.png",
     "48": "/openMeteoForecast/icons/rainy_weather_48.png",
     "128": "/openMeteoForecast/icons/rainy_weather_128.png"
   },
