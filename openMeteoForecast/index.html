@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Meteo</title>
+		<link href="styles/install-button.css" rel="stylesheet" type="text/css">
+		<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+		<link href="styles/openMeteoForecast.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	
+<body>
+	<h1> Weather forecast for Grenoble </h1> 
+	<table border='1'><tr>
+			<td> <b>Date & time </b></td> <td id="time"> </td> 
+		</tr>
+	</table>
+	<br>
+	<table border='1'>
+		<tr>
+			<td> <b>Humidity (%) </b></td> <td id="hum"> </td> 
+			<td> <b>Temp (C) </b></td> <td id="temp"> </td>
+			<td> <b>Precipit (mm/h) </b></td> <td id="prec"> </td> 
+		</tr>
+		
+		<tr>
+			<td> <b>Low Cl.</b> </td> <td id="lowCl"> </td> 
+			<td> <b>Med Cl. </b></td> <td id="medCl"> </td> 
+			<td> <b>Hi Cl. </b></td> <td id="hiCl"> </td> 
+		</tr>
+		<tr>
+			<td> <b>Wind dir </b></td> <td id="wiDir"> </td> 
+			<td> <b>Wind Speed (Km/h) </b></td> <td id="wiSp"> </td> 
+		</tr>
+	</table>
+	</br>
+	</br>
+	<form id="form1">
+		Hours from last calc (0-47): <input type="number" value="0">
+	</form> 
+	<button onclick=changeData()> Calculate </button>
+	<button id="install-btn" class="button"  style="left:100px; top:410px;">Install app</button>
+	<script src="scripts/install.js"></script>	
+	
+	<script type="text/javascript" src="scripts/meteo.js"> </script>
+	<script type="text/javascript" src="http://api.ometfn.net/0.1/forecast/eu12/45.2002,5.7222/48h.json?callback=meteoGet"></script>
+</body>
+</html>

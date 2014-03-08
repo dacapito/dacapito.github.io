@@ -1,0 +1,30 @@
+{
+  "version": "0.1",
+  "name": "EBAC",
+  "description": "Weather in Grenoble",
+  "launch_path": "/openMeteoForecast/index.html",
+  "icons": {
+    "60": "/openMeteoForecast/icons/rainy_weather_60.png",
+    "48": "/openMeteoForecast/icons/rainy_weather_48.png",
+    "128": "/openMeteoForecast/icons/rainy_weather_128.png"
+  },
+  "developer": {
+    "name": "dacApp",
+    "url": "http://perso.numericable.fr/francesco.dacapito/"
+  },
+  "locales": {
+    "es": {
+      "description": "Estimated blood alcohol content",
+      "developer": {
+        "url": "http://perso.numericable.fr/francesco.dacapito/"
+      }
+    },
+    "it": {
+      "description": "Estimated blood alcohol content",
+      "developer": {
+        "url": "http://perso.numericable.fr/francesco.dacapito/"
+      }
+    }
+  },
+  "default_locale": "en"
+}
