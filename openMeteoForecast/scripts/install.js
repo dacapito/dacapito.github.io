@@ -1,4 +1,4 @@
-var manifest_url = 'http://dacapito.github.io/installableEbac/manifest.webapp';
+var manifest_url = 'http://dacapito.github.io/openMeteoForecast/manifest.webapp';
 
 function install(ev) {
   ev.preventDefault();
